@@ -1,0 +1,9 @@
+<body>
+    <h3>Meu nome é <%= nome%>.</h3>
+    <% if(exibirMsg) { %>
+        idioma: <%= idioma %>.
+    <% } %>
+
+   <% produtos.forEach(function(produto){ %>
+<%= produto.nome %> - <%= produto.valor %>
+<%   })%>
